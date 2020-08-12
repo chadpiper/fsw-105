@@ -35,12 +35,12 @@ for (i = 0; i < enemies.length; i++)
 
 
 // 1 is not at all attracted, 10 is "super" attracted...
-function howAttractedIsLoisLaneToMe(){
+function howAttractedIsLoisLaneToMe(min, max){
     
-    return Math.floor(Math.random() * 10) + 1;
+    return Math.floor(Math.random() * (min - max + 1) ) + min;
 
 }
-console.log("howAttractedIsLoisLaneToMe")
+console.log(min, max)
 
 
 var clarkKent = true;
